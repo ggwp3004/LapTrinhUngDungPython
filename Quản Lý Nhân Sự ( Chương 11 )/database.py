@@ -39,16 +39,6 @@ def hien_thi():
 
     conn.close()
     return data
- 
-def hien_thi():
-    conn = connect()
-    cursor = conn.cursor()
-
-    cursor.execute("SELECT * FROM nhansu")
-    data = cursor.fetchall()
-
-    conn.close()
-    return data
 
 def sua_nhansu(cccd, hoten, ngaysinh, gioitinh, diachi):
     conn = connect()
